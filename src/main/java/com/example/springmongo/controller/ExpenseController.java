@@ -39,7 +39,7 @@ public class ExpenseController {
         return ResponseEntity.ok(expenseService.getExpenseByName(name));
     }
 
-    @GetMapping("/{id}")
+    @DeleteMapping("/{id}")
     public ResponseEntity deleteExpense(@PathVariable String id) {
         expenseService.deleteExpense(id);
         return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
