@@ -99,10 +99,10 @@
 
 ```json
 {
-        "id": "64bbf18334eac8418631fc15",
-        "name": "Internet",
-        "category": "UTILITIES",
-        "amount": 5
+    "id": "64bbf18334eac8418631fc15",
+    "name": "Internet",
+    "category": "UTILITIES",
+    "amount": 5
 }
 ```
 <br/>
