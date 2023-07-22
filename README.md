@@ -59,6 +59,7 @@
     }
 ]
 ```
+<br/>
 
 - ### POST /api/expense
 
@@ -67,6 +68,7 @@
 | Controller method |        Request body        | Response body |   Description   | OK code |
 |:-----------------:|:--------------------------:|:-------------:|:---------------:|:-------:|
 |   addExpense()    | [Expense](#project-types)  |     Empty     | Add new expense |   201   |
+<br/>
 
 - ### PUT /api/expense
 
@@ -75,6 +77,7 @@
 | Controller method |        Request body        | Response body |           Description            | OK code  | 
 |:-----------------:|:--------------------------:|:-------------:|:--------------------------------:|:--------:|
 |  updateExpense()  | [Expense](#project-types)  |     Empty     | Update expense by id in req body |   200    |
+<br/>
 
 - ### GET /api/expense/{name}
 
@@ -102,6 +105,7 @@
         "amount": 5
 }
 ```
+<br/>
 
 - ### DELETE /api/expense/{id}
 
