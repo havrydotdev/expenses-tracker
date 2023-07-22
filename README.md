@@ -1,4 +1,4 @@
-# Spring boot CRUD application
+# Expenses tracker
 
 ## Technologies
 
