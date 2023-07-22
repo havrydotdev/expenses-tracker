@@ -15,7 +15,7 @@ import static com.example.springmongo.model.ExpenseCategory.*;
 public class ExpenseChangeUnit {
     private final MongoTemplate template;
 
-    private List<Expense> expenseList;
+    private final List<Expense> expenseList;
 
     public ExpenseChangeUnit(MongoTemplate template) {
         this.template = template;
@@ -46,8 +46,8 @@ public class ExpenseChangeUnit {
 
     private Expense createNewExpense(String expenseName, ExpenseCategory expenseCategory, BigDecimal amount) {
         Expense expense = new Expense();
-        expense.setExpenseCategory(expenseCategory);
-        expense.setExpenseName(expenseName);
+        expense.setCategory(expenseCategory);
+        expense.setName(expenseName);
         expense.setAmount(amount);
         return expense;
     }

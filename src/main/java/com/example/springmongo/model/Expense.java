@@ -13,9 +13,10 @@ public class Expense {
     private String id;
     @Field(name = "name")
     @Indexed(unique = true)
-    private String expenseName;
+    private String name;
+
     @Field(name = "category")
-    private ExpenseCategory expenseCategory;
+    private ExpenseCategory category;
     @Field(name = "amount")
     private BigDecimal amount;
 
@@ -27,20 +28,20 @@ public class Expense {
         this.id = id;
     }
 
-    public String getExpenseName() {
-        return expenseName;
+    public String getName() {
+        return name;
     }
 
-    public void setExpenseName(String expenseName) {
-        this.expenseName = expenseName;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public ExpenseCategory getExpenseCategory() {
-        return expenseCategory;
+    public ExpenseCategory getCategory() {
+        return category;
     }
 
-    public void setExpenseCategory(ExpenseCategory expenseCategory) {
-        this.expenseCategory = expenseCategory;
+    public void setCategory(ExpenseCategory category) {
+        this.category = category;
     }
 
     public BigDecimal getAmount() {

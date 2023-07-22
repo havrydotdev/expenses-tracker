@@ -25,8 +25,8 @@ public class ExpenseService {
                         String.format("Cannot Find Expense by ID %s", expense.getId())
                 ));
 
-        savedExpense.setExpenseName(expense.getExpenseName());
-        savedExpense.setExpenseCategory(expense.getExpenseCategory());
+        savedExpense.setName(expense.getName());
+        savedExpense.setCategory(expense.getCategory());
         savedExpense.setAmount(expense.getAmount());
 
         expenseRepository.save(expense);
